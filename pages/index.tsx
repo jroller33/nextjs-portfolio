@@ -12,8 +12,6 @@ export default function Home() {
         <title>John Roller Portfolio</title> 
       </Head>
 
-      {/* Header */}
-
       <Header />
 
       {/* Hero */}
