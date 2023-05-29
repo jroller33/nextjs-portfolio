@@ -11,9 +11,7 @@ export default function Home() {
         <title>John Roller Portfolio</title> 
       </Head>
 
-    <main>
-      
-    </main>
+
 
     </div>
   )
