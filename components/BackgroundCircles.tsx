@@ -5,8 +5,8 @@ type Props = {}
 
 function BackgroundCircles({}: Props) {
     return (
-    <div>
-        <div className='border border-red-500 rounded-full h-[200px] w-[200px]'/>
+    <div className='relative flex justify-center items-center'>
+        <div className='absolute border [#333333] rounded-full h-[200px] w-[200px] mt-52 animate-ping'/>
         <div />
         <div />
         <div />
