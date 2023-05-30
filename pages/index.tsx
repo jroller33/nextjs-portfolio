@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 
-const inter = Inter({ subsets: ['latin'] })     // I'm not sure what this does, but I don't want to delete it yet
+const inter = Inter({ subsets: ['latin'] })     // This does something with the font, not sure yet
 
 export default function Home() {
   return (
