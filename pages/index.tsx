@@ -8,14 +8,14 @@ const inter = Inter({ subsets: ['latin'] })     // This does something with the 
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-[rgb(0,12,24)] text-white h-screen'>
       <Head>
         <title>John Roller Portfolio</title> 
       </Head>
 
 
       <Header />
-
+ 
 
       {/* Hero */}
       <section id="hero">

@@ -18,7 +18,10 @@ export default function Hero({}: Props) {
 
     return (
     <div>
-        <p>{text}</p>
+        <h1>
+        <span>{text}</span>
+        <Cursor cursorColor="#16DE00" />
+        </h1>
     </div>
     )
 }
