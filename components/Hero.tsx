@@ -20,9 +20,10 @@ export default function Hero({}: Props) {
     return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles />
+        <img src='' alt='' />
         <h1>
-        <span>{text}</span>
-        <Cursor cursorColor="#16DE00" />
+            <span>{text}</span>
+            <Cursor cursorColor="#ffea00" />
         </h1>
     </div>
     )
