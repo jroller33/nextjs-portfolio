@@ -10,7 +10,7 @@ export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
         words: [
         "Hi, my name's John Roller.",
-        "I use Python and JavaScript",
+        "I use Python and TypeScript,",
         "to build web applications.",
         "Scroll down to see my projects!",
         ],
@@ -24,7 +24,7 @@ export default function Hero({}: Props) {
         
         <BackgroundCircles />
 
-        <div className='relative h-96 w-96'>
+        <div className='relative rounded-full h-32 w-32 mx-auto'>
             <Image priority src='/HeroImage.png' alt='Hero Image' fill={true} />
         </div>
 
