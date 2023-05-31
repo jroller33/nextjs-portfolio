@@ -25,7 +25,7 @@ export default function Hero({}: Props) {
         <BackgroundCircles />
 
         <div className='relative h-96 w-96'>
-            <Image src='/HeroImage.png' alt='Hero Image' fill={true} />
+            <Image priority src='/HeroImage.png' alt='Hero Image' fill={true} />
         </div>
 
         <h1>
