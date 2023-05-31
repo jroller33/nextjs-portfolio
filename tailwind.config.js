@@ -6,7 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'slow-ping': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+      },
+    },
   },
   plugins: [],
 }
