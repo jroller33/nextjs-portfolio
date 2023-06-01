@@ -20,7 +20,7 @@ export default function Home() {
  
 
       {/* Hero */}
-      <section id="hero" className='snap-center'>
+      <section id="hero" className='snap-start'>
         <Hero />
       </section>
 
