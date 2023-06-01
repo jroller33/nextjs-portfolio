@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })     // This does something with the 
 
 export default function Home() {
   return (
-    <div className='bg-[#000C18] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[#000C18] text-[#f5f5f5c1] h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
         <title>John Roller Portfolio</title> 
       </Head>
