@@ -35,7 +35,7 @@ export default function Hero({ }: Props) {
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'>Full-Stack Developer</h2>
 
                 {/* Typewriter Text */}
-                <h1 className='text-4xl lg:text-5xl font-semibold px-10'>
+                <h1 className='text-xl lg:text-5xl font-semibold px-10'>
                     <span className='mr-1'>{text}</span>
                     <Cursor cursorColor="#ffea00" />
                 </h1>
