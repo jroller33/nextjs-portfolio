@@ -6,13 +6,13 @@ import Image from 'next/image'
 
 type Props = {}
 
-export default function Hero({}: Props) {
+export default function Hero({ }: Props) {
     const [text, count] = useTypewriter({
         words: [
-        "Hi, my name's John Roller.",
-        "I use Python and TypeScript,",
-        "to build web applications.",
-        "Scroll down to see my projects!",
+            "Hi, my name's John Roller.",
+            "I use Python and TypeScript,",
+            "to build web applications.",
+            "Scroll down to see my projects!",
         ],
         loop: true,
         delaySpeed: 2000,
@@ -20,18 +20,23 @@ export default function Hero({}: Props) {
 
 
     return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-        
-        <BackgroundCircles />
+        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
 
-        <div className='relative rounded-full h-32 w-32 mx-auto'>
-            <Image priority src='/HeroImage.png' alt='Hero Image' fill={true} />
+            <BackgroundCircles />
+
+            {/* Hero Image */}
+            <div className='relative rounded-full h-32 w-32 mx-auto object-contain'>
+                <Image priority src='/HeroImageTransparent.png' alt='Hero Image' fill={true} />
+            </div>
+
+
+                {/* Typewriter Text */}
+            <div>
+                <h1>
+                    <span>{text}</span>
+                    <Cursor cursorColor="#ffea00" />
+                </h1>
+            </div>
         </div>
-
-        <h1>
-            <span>{text}</span>
-            <Cursor cursorColor="#ffea00" />
-        </h1>
-    </div>
     )
 }
