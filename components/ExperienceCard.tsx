@@ -4,6 +4,8 @@ type Props = {}
 
 export default function ExperienceCard({}: Props) {
   return (
-    <div>ExperienceCard</div>
+    <article>
+        {/*     1.31.14 */}
+    </article>
   )
 }

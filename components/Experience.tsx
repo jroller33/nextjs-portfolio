@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import ExperienceCard from './ExperienceCard'
 
 type Props = {}
 
@@ -16,9 +17,10 @@ export default function Experience({}: Props) {
         </h3>
 
         <div>
-            {/* Experience Card */}
-            {/* Experience Card */}
-            {/* Experience Card */}
+            <ExperienceCard />
+            <ExperienceCard />
+            <ExperienceCard />
+            <ExperienceCard />
         </div>
 
     </motion.div>
