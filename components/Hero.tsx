@@ -24,7 +24,7 @@ export default function Hero({ }: Props) {
 
             <BackgroundCircles />
 
-            {/* Hero Image */}
+                {/* Hero Image */}
             <div className='relative rounded-full h-32 w-32 mx-auto object-contain'>
                 <Image priority src='/HeroImageTransparent.png' alt='Hero Image' fill={true} />
             </div>
@@ -32,6 +32,7 @@ export default function Hero({ }: Props) {
 
                 {/* Typewriter Text */}
             <div>
+                <h2 className='text-sm uppercase text-gray-400 pb-2 tracking-[12px]'>Full-Stack Developer</h2>
                 <h1>
                     <span>{text}</span>
                     <Cursor cursorColor="#ffea00" />
