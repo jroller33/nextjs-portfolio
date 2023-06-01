@@ -31,7 +31,7 @@ export default function Hero({ }: Props) {
             </div>
 
 
-            <div>
+            <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'>Full-Stack Developer</h2>
 
                 {/* Typewriter Text */}
@@ -57,7 +57,7 @@ export default function Hero({ }: Props) {
                     <Link href="#projects">
                         <button className='heroButton'>Projects</button>
                     </Link>
-                    
+
                 </div>
             </div>
         </div>
