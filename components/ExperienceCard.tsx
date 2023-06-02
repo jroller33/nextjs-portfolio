@@ -4,7 +4,7 @@ type Props = {}
 
 export default function ExperienceCard({ }: Props) {
   return (
-    <article>
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]'>
       <motion.img         //  needs to be Image component wrapped in <motion.div>
         initial={{
           y: -100,
@@ -19,16 +19,28 @@ export default function ExperienceCard({ }: Props) {
         alt='ExperienceCard image'
       />
 
-      <div>
-        <h4>title</h4>
-        <p>job</p>
-        <div>
-          {/* tech used (icon) */}
-          {/* tech used (icon) */}
-          {/* tech used (icon) */}
-          {/* tech used (icon) */}
+      <div className='px-0 md:px-10'>
+        <h4 className='text-4xl font-light'>title</h4>
+        <p className='font-bold text-2xl mt-1'>job</p>
+        <div className='flex space-x-2 my-2'>
+          <img                                           // these need to be Image components
+            className='h-10 w-10 rounded-full'
+            src='https://placehold.co/20x20/png'
+            alt='Tech used'
+          />
+          <img                                           // these need to be Image components
+            className='h-10 w-10 rounded-full'
+            src='https://placehold.co/20x20/png'
+            alt='Tech used'
+          />
+          <img                                           // these need to be Image components
+            className='h-10 w-10 rounded-full'
+            src='https://placehold.co/20x20/png'
+            alt='Tech used'
+          />
+
         </div>
-        <p>started... ended...</p>
+        <p className='uppercase py-5 text-gray-300'>started... ended...</p>
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>
           <li>summary points</li>
