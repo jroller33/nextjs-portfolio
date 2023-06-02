@@ -27,7 +27,7 @@ export default function Hero({ }: Props) {
 
             {/* Hero Image */}
             <div className='relative rounded-full h-32 w-32 mx-auto object-contain'>
-                <Image priority src='/HeroImageTransparent.png' alt='Hero Image' fill={true} />
+                <Image priority src='https://placehold.co/400x600/png' alt='Hero Image' fill={true} />
             </div>
 
 
