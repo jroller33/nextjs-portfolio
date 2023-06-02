@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-
-
-module.exports = {
-  nextConfig,
 
   images: {       // if you want to use an image from a remote URL, you have to add it to remotePatterns
     remotePatterns: [
@@ -18,3 +13,6 @@ module.exports = {
     ],
   },
 }
+
+
+module.exports = nextConfig
