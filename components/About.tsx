@@ -17,7 +17,7 @@ export default function About({ }: Props) {
         About
       </h3>
 
-      <motion.img
+      <motion.img         //  needs to be Image component wrapped in <motion.div>
         initial={{
           x: -200,
           opacity: 0,
