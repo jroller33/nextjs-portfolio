@@ -5,7 +5,7 @@ type Props = {}
 export default function ExperienceCard({ }: Props) {
   return (
     <article 
-    className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100'
+    className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'
     >
       <motion.img         //  needs to be Image component wrapped in <motion.div>
         initial={{
@@ -45,11 +45,11 @@ export default function ExperienceCard({ }: Props) {
         <p className='uppercase py-5 text-gray-300'>started... ended...</p>
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>
-          <li>summary points</li>
-          <li>summary points</li>
-          <li>summary points</li>
-          <li>summary points</li>
-          <li>summary points</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Etiam et massa sed erat volutpat elementum.</li>
+          <li>Aliquam et venenatis elit.</li>
+          <li>Curabitur a nunc libero. Ut at posuere dolor.Curabitur a nunc libero. Ut at posuere dolor.</li>
+          <li>Curabitur a nunc libero. Ut at posuere dolor.Curabitur a nunc libero. Ut at posuere dolor.</li>
         </ul>
 
       </div>
