@@ -28,20 +28,18 @@ return (
             <SocialIcon 
                 url='https://www.youtube.com/@johnr8729/videos'
                 network='youtube'
-                fgColor='gray'
+                fgColor='currentColor'
                 bgColor='transparent'
+                className='text-gray-500 hover:text-[#ffea00]'
             />
             <SocialIcon 
                 url='www.github.com/jroller33'
                 network='github'
-                fgColor='gray'
+                fgColor='currentColor'
                 bgColor='transparent'
+                className='text-gray-500 hover:text-[#ffea00]'
             />
-            <SocialIcon 
-                url='www.youtube.com/sonnysangha'
-                fgColor='gray'
-                bgColor='transparent'
-            />
+
         </motion.div>
 
         <motion.div 
