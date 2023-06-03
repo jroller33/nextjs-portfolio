@@ -12,7 +12,9 @@ export default function Skill({ directionLeft }: Props) {
                 initial={{
                     x: directionLeft ? -200 : 200,
                 }}
-            />
+            />  
         </div>
     )
 }
+
+// 1:50
