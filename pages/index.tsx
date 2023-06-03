@@ -25,9 +25,10 @@ export default function Home() {
         <About />
       </section>
 
-      <section id='experience' className='snap-center scroll-smooth'>
+      {/*       this Experience section has page layout issues. i'll add it back later once it's fixed. */}
+      {/* <section id='experience' className='snap-center scroll-smooth'>
         <Experience />
-      </section>
+      </section> */}
 
       {/* Skills */}
 
