@@ -16,6 +16,7 @@ export default function Skill({ directionLeft }: Props) {
 
                 transition={{ duration: 1.5 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                    
             />  
         </div>
     )
