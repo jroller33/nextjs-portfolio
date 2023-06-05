@@ -3,6 +3,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import BackgroundCircles from '@/components/BackgroundCircles'
 import Image from 'next/image'
 import Link from 'next/link'
+
 // import HeroImage from '../public/HeroImage.png'
 
 type Props = {}
@@ -46,8 +47,8 @@ export default function Hero({ }: Props) {
                         <button className='heroButton'>About</button>
                     </Link>
 
-                    <Link href="#experience">
-                        <button className='heroButton'>Experience</button>
+                    <Link href="#spotlight">
+                        <button className='heroButton'>Spotlight</button>
                     </Link>
 
                     <Link href="#skills">
