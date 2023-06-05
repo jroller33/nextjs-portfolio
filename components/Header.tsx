@@ -6,6 +6,7 @@ type Props = {}
 
 export default function Header({}: Props) {
 return (
+
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div initial={{
             x: -500,
@@ -30,18 +31,20 @@ return (
                 network='youtube'
                 fgColor='currentColor'
                 bgColor='transparent'
-                className='text-gray-500 hover:text-[#ffea00]'
+                className='text-gray-500 hover:text-[#ffea00]/60'
             />
             <SocialIcon 
-                url='www.github.com/jroller33'
+                url='https://www.github.com/jroller33'
                 network='github'
                 fgColor='currentColor'
                 bgColor='transparent'
-                className='text-gray-500 hover:text-[#ffea00]'
+                className='text-gray-500 hover:text-[#ffea00]/60'
             />
 
         </motion.div>
 
+
+            {/* right side */}
         <motion.div 
         initial={{
             x: 500,
@@ -56,14 +59,14 @@ return (
         transition={{ 
             duration: 2 
         }}
-        className='flex flex-row items-center text-gray-300 cursor-pointer'>
+        className='flex flex-row items-center text-gray-500 cursor-pointer'>
             <SocialIcon 
-            className='cursor-pointer'
             network='email'
-            fgColor='gray'
+            fgColor='currentColor'
             bgColor='transparent'
+            className='cursor-pointer text-gray-500 hover:text-[#ffea00]/60'
             />
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Contact Me</p>
+            <p className='uppercase hidden md:inline-flex text-sm text-gray-500 '>Contact Me</p>
         </motion.div>
     </header>
 )
