@@ -8,10 +8,14 @@ type Props = {
 export default function Skill({ directionLeft }: Props) {
     return (
         <div className='group relative flex cursor-pointer'>
-            <motion.img                 // This needs to be an Image component wrapped in <motion.div>
+            <motion.div                 // This needs to be an Image component wrapped in <motion.div>
                 initial={{
                     x: directionLeft ? -200 : 200,
+                    opacity: 0,
                 }}
+
+                transition={{ duration: 1.5 }}
+                whileInView={{ opacity: 1, x: 0 }}
             />  
         </div>
     )

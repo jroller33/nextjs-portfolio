@@ -16,6 +16,7 @@ const nextConfig = {
         port: '',
         pathname: '/20x20/png',
       },
+
     ],
   },
 }
