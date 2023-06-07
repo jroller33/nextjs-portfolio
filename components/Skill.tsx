@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import JsIcon from './icons/JsIcon'
+import Image from 'next/image'
+import JsIcon from "../public/icons/JsIcon.svg"
 
 type Props = {
     directionLeft?: boolean;
@@ -17,7 +18,11 @@ function Skill({ directionLeft }: Props) {
                 transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}>
 
-
+                    <Image
+                        priority
+                        src={JsIcon}
+                        alt="JavaScript"
+                    />
 
             </motion.div>
 
