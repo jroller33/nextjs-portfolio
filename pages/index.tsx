@@ -37,8 +37,7 @@ export default function Home() {
         <Skills />
       </section>
 
-      {/* Projects */}
-      <section>
+      <section id='projects' className='snap-start'>
         <Projects />
       </section>
       {/* Contact Me */}
