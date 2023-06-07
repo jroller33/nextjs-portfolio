@@ -7,6 +7,7 @@ import About from '@/components/About'
 // import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
+import ContactMe from '@/components/ContactMe'
 
 const inter = Inter({ subsets: ['latin'] })     // This does something with the font, not sure yet
 
@@ -40,7 +41,11 @@ export default function Home() {
       <section id='projects' className='snap-start'>
         <Projects />
       </section>
-      {/* Contact Me */}
+
+      <section>
+        <ContactMe />
+      </section>
+
     </div>
   )
 }
