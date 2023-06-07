@@ -1,27 +1,28 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import 'devicon.min.css'        // required for Skills icons
-
+import JsIcon from './icons/JsIcon'
 
 type Props = {
     directionLeft?: boolean;
 }
 
-export default function Skill({ directionLeft }: Props) {
+function Skill({ directionLeft }: Props) {
     return (
         <div className='group relative flex cursor-pointer'>
-            <motion.div                 // This needs to be an Image component wrapped in <motion.div>
+            <motion.div
                 initial={{
                     x: directionLeft ? -200 : 200,
                     opacity: 0,
                 }}
+                transition={{ duration: 1 }}
+                whileInView={{ opacity: 1, x: 0 }}>
 
-                transition={{ duration: 1.5 }}
-                whileInView={{ opacity: 1, x: 0 }}
 
-            />  
+
+            </motion.div>
+
         </div>
     )
 }
 
-// 1:50
+export default Skill;
