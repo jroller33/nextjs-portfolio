@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import 'devicon.min.css'        // required for Skills icons
+
 
 type Props = {
     directionLeft?: boolean;
@@ -16,7 +18,7 @@ export default function Skill({ directionLeft }: Props) {
 
                 transition={{ duration: 1.5 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                    
+
             />  
         </div>
     )
