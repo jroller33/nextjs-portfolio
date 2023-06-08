@@ -31,14 +31,14 @@ return (
                 network='youtube'
                 fgColor='currentColor'
                 bgColor='transparent'
-                className='text-gray-500 hover:text-[#ffea00]/60 hover:animate-slow-ping'
+                className='text-gray-500 hover:text-[#ffea00]/60 hover:animate-pulse'
             />
             <SocialIcon 
                 url='https://www.github.com/jroller33'
                 network='github'
                 fgColor='currentColor'
                 bgColor='transparent'
-                className='text-gray-500 hover:text-[#ffea00]/60 hover:animate-slow-ping'
+                className='text-gray-500 hover:text-[#ffea00]/60 hover:animate-pulse'
             />
 
         </motion.div>
@@ -64,7 +64,7 @@ return (
             network='email'
             fgColor='currentColor'
             bgColor='transparent'
-            className='cursor-pointer text-gray-500 hover:text-[#ffea00]/60 hover:animate-slow-ping'
+            className='cursor-pointer text-gray-500 hover:text-[#ffea00]/60 hover:animate-pulse'
             />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-500 '>Contact Me</p>
         </motion.div>
