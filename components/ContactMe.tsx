@@ -1,11 +1,27 @@
 import React from 'react'
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid"
+import { useForm, SubmitHandler } from "react-hook-form"
+
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
+
 
 type Props = {}
 
 export default function ContactMe({ }: Props) {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
+  const { 
+    register, 
+    handleSubmit, 
+    // watch, 
+    // formState: { errors } 
+  } = useForm<Inputs>();
+  
+  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);  // this ctrls what happens to form data once it's submitted
 
 
 
