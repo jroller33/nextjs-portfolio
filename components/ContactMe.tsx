@@ -16,12 +16,39 @@ export default function ContactMe({ }: Props) {
           <span className='underline decoration-[#ffea00]/50'>{"Let's Talk"}</span>
         </h4>
 
-        <div>
+
+        <div className='space-y-10'>
+          
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
             <p className='text-2xl'>+123456789</p>
           </div>
+
+          <div className='flex items-center space-x-5 justify-center'>
+            <EnvelopeIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
+            <p className='text-2xl'>name@email.com</p>
+          </div>
+          
+          <div className='flex items-center space-x-5 justify-center'>
+            <MapPinIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
+            <p className='text-2xl'>123 Address Rd</p>
+          </div>
         </div>
+
+        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+          <div className='flex space-x-2'>
+            <input className='contactInput' type="text" />
+            <input className='contactInput' type="text" />
+          </div>
+
+          <input className='contactInput' type='text' />
+
+          <textarea className='contactInput'/>
+          <button>Submit</button>
+
+
+
+        </form>
 
       </div>
     </div>
