@@ -14,17 +14,18 @@ type Inputs = {
 type Props = {}
 
 export default function ContactMe({ }: Props) {
-  const { 
-    register, 
-    handleSubmit, 
+
+  const {
+    register,
+    handleSubmit,
     // watch, 
     // formState: { errors } 
   } = useForm<Inputs>();
-  
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);  // this ctrls what happens to form data once it's submitted
 
 
-
+  const onSubmit: SubmitHandler<Inputs> = formData => { // this ctrls what happens to form data once it's submitted
+      window.location.href = `mailto:name@email.com?subject=${formData.subject}&body=Hello, I'm ${formData.name}. ${formData.message}. Contact me at ${formData.email}`;
+  };  
 
 
   return (
@@ -41,7 +42,7 @@ export default function ContactMe({ }: Props) {
 
 
         <div className='space-y-10'>
-          
+
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
             <p className='text-2xl'>+123456789</p>
@@ -51,46 +52,55 @@ export default function ContactMe({ }: Props) {
             <EnvelopeIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
             <p className='text-2xl'>name@email.com</p>
           </div>
-          
+
           <div className='flex items-center space-x-5 justify-center'>
             <MapPinIcon className='text-[#ffea00] h-7 w-7 hover:animate-ping' />
             <p className='text-2xl'>123 Address Rd</p>
           </div>
         </div>
 
-        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className='flex flex-col space-y-2 w-fit mx-auto'
+        >
           <div className='flex space-x-2'>
-            <input 
-            placeholder="Name" 
-            className='contactInput' 
-            type="text" 
-            required
+            <input
+              {...register('name')}
+              placeholder="Name"
+              className='contactInput'
+              type="text"
+              required
             />
-            
-            <input 
-            placeholder="Email" 
-            className='contactInput' 
-            type="email" 
-            required
+
+            <input
+              {...register('email')}
+              placeholder="Email"
+              className='contactInput'
+              type="email"
+              required
             />
-          
+
           </div>
 
-          <input 
-          placeholder="Subject" 
-          className='contactInput' 
-          type='text'
-          required
+          <input
+            {...register('subject')}
+            placeholder="Subject"
+            className='contactInput'
+            type='text'
+            required
           />
 
-          <textarea 
-          placeholder="Message" 
-          className='contactInput' 
-          required
+          <textarea
+            {...register('message')}
+            placeholder="Message"
+            className='contactInput'
+            required
           />
-          
-          <button 
-          className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg hover:bg-slate-600 hover:text-[#F7AB0A] hover:animate-pulse'>
+
+          <button
+            type='submit'
+            className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg hover:bg-slate-600 hover:text-[#F7AB0A] hover:animate-pulse'>
             Submit
           </button>
 
